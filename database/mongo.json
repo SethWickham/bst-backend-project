@@ -1,4 +1,0 @@
-{
-  "_comment": "here we create a json object in between curly braces. This will hold the reference that we will pass to our backend that will connect our project to our Mongo DB Atlas. The key is set to mongoURI and its respective value is set to the link provided from our mongo DB Atlas",
-  "mongoURI": "mongodb+srv://seth123:seth123@bst-project-cluster-o48ju.mongodb.net/test?retryWrites=true&w=majority"
-}

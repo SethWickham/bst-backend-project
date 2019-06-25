@@ -2,10 +2,10 @@
   "name": "bst-backend-project",
   "version": "1.0.0",
   "description": "backend project for BST ",
-  "main": "PORT.js",
+  "main": "index.js",
   "scripts": {
     "start": "node server",
-    "server": "nodemon PORT"
+    "server": "nodemon index.js"
   },
   "repository": {
     "type": "git",

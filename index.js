@@ -1,16 +1,20 @@
 //see database.js for notes regarding the built in require() method
 const express = require('express');
-
-// bringing in our database connector arrow function
-//which is then called right below
-const dbConnector = require('./config/database');
-dbConnector();
-
 // we are creating an express application and setting this as our backEnd
 const backEnd = express();
 
-//creating a single endpoint to test with postman
-backEnd.get('/', (req, res) => res.send('API Connected'));
+// bringing in our database connector arrow function
+//which is then called right below
+const dbConnector = require('./config/dbConnector');
+dbConnector();
+
+// creating a GET request for POSTMAN
+backEnd.get('/', (req, res) => res.send('API Connected GET'));
+
+//creating a POST request for POSTMAN
+backEnd.post('/', (req, res) => res.send('API Connected POST'));
+
+backEnd.use('/API/inputForm', require('./routes/API/inputForm'));
 
 //This will be the number that our Port is identified with
 const PORTENTRY = 3200;

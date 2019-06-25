@@ -1,0 +1,30 @@
+{
+  "name": "bst-backend-project",
+  "version": "1.0.0",
+  "description": "backend project for BST ",
+  "main": "PORT.js",
+  "scripts": {
+    "start": "node server",
+    "server": "nodemon PORT"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SethWickham/bst-backend-project.git"
+  },
+  "author": "Seth Wickham",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/SethWickham/bst-backend-project/issues"
+  },
+  "homepage": "https://github.com/SethWickham/bst-backend-project#readme",
+  "dependencies": {
+    "config": "^3.1.0",
+    "express": "^4.17.1",
+    "express-validator": "^6.0.1",
+    "mongoose": "^5.6.1",
+    "request": "^2.88.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.1"
+  }
+}

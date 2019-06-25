@@ -1,0 +1,4 @@
+{
+  "_comment": "here we are connecting to our Mongo DB Atlas by setting mongoURI to the VALUE of the link that was provided from Mongo DB Atlas ",
+  "mongoURI": "mongodb+srv://seth123:seth123@bst-project-cluster-o48ju.mongodb.net/test?retryWrites=true&w=majority"
+}

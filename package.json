@@ -2,10 +2,10 @@
   "name": "bst-backend-project",
   "version": "1.0.0",
   "description": "backend project for BST ",
-  "main": "index.js",
+  "main": "expressServer.js",
   "scripts": {
     "start": "node server",
-    "server": "nodemon index.js"
+    "server": "nodemon expressServer.js"
   },
   "repository": {
     "type": "git",
@@ -19,6 +19,8 @@
   "homepage": "https://github.com/SethWickham/bst-backend-project#readme",
   "dependencies": {
     "config": "^3.1.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.0.0",
     "express": "^4.17.1",
     "express-validator": "^6.0.1",
     "mongoose": "^5.6.1",

@@ -14,6 +14,11 @@ backEnd.get('/', (req, res) => res.send('API Connected GET'));
 //creating a POST request for POSTMAN
 backEnd.post('/', (req, res) => res.send('API Connected POST'));
 
+//This is how our API routes will interface with the index.js file
+// all of our routes will go through here and into the routes/API/inputForm or
+// any other file name that will hold our routes if it would expand.
+// using the built in use() we are able to locate our routes on different
+// files and therefore can break our code apart into more managable portions
 backEnd.use('/API/inputForm', require('./routes/API/inputForm'));
 
 //This will be the number that our Port is identified with

@@ -24,7 +24,7 @@ backend.use('/API/firstNames', require('./routes/API/firstNames'));
 //this allows us to parse json so that we can send and recieve json into the database
 backend.use(express.json);
 
-//the flag for useNewUrlParser and useCreateIndex is updated syntax so that it will run properly in the future
+//the flag for useNewUrlParser and useCreateIndex is updated syntax so that it will run properly in future versions
 const URIdatabase = process.env.ATLAS_URI_DB;
 mongoose.connect(URIdatabase, { useNewUrlParser: true, useCreateIndex: true });
 

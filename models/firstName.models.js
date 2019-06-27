@@ -4,7 +4,7 @@ const mongoose = require('mongoose');
 // data is going to look that we are going to be passing through to our database.
 // We are basically placing definition and limits to our data
 // for organizational and efficiency purposes. Because data can be so
-// varied its helpful to create confinements to better hold our data
+// varied its helpful to create "definitions" to better contain our data
 const Schema = mongoose.Schema;
 
 const firstNameSchema = new Schema({

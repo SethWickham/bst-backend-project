@@ -1,7 +1,5 @@
 //this is our routes file for first names
-// this is basically a tunnel connecting our model
-//with our database and is being called by our firstNamesRouter
-// in our expressServer file.
+// our routes file connects our front end with our backend and database
 
 // here we are bringing in our express router to help us create routes
 // we are also bringing in our first name model
@@ -43,7 +41,7 @@ router.route('/add').post((req, res) => {
 
 //Our third RESTful API endpoint is our delete route.
 // We use the :id to communicate with mongo that
-//we are wanting to get the unique _id that mongo attaches to every object in our database.
+// we are wanting to get the unique _id that mongo attaches to every object in our database.
 router.route('/:id').delete((req, res) => {
   FirstName.findByIdAndDelete(req.params.id)
     .then(() => res.json('First Name Deleted'))

@@ -1,13 +1,12 @@
-//this is the core of our our back end project.
-// The computer will read our program starting with the top line and moving left to right, top to bottom
-//unless we say otherwise (this is control flow). So any code or other file we want to use must connect in some way to our expressServer file
+//this file is the core of our our back end project.
+// it is where our server will be launched from
 
 // here we are using built in require method to bring in our installed dependencies
 // which will help us to run our application.
 //  we are bringing in express to use in our application since we are going to be creating
 // an express backend application that will communicate to our front end.
 const express = require('express');
-//
+
 // cors allows our server to take in requests and communicate to a different domain
 //we are then calling it below in our .use method
 const cors = require('cors');

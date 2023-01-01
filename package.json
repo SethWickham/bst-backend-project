@@ -18,7 +18,7 @@
   },
   "homepage": "https://github.com/SethWickham/bst-backend-project#readme",
   "dependencies": {
-    "config": "^3.1.0",
+    "config": "^3.3.8",
     "cors": "^2.8.5",
     "dotenv": "^8.0.0",
     "express": "^4.17.1",
